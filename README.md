@@ -2,7 +2,7 @@
 
 ![My Image](./image.png)
 
-**<span style="color:red;">We are under Web Construction</span>**
+🚧 **We are under Web Construction** 🚧
 
 ## Description
 
