@@ -1,0 +1,166 @@
+.main-container{
+    width: 100%;
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+.main-container {
+    text-align: center;
+}
+.header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    color: white;
+}
+.inner-header {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.headercard {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 24px;
+    padding: 20px;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+.parallax > use {
+    animation: move-forever 10s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+  
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+  
+    .content {
+        height: 30vh;
+    }
+  
+    .headercard h1 {
+        font-size: 18px;
+    }
+}
+
+.imageInputHome{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.featuredImage{
+    padding-top: 30px;
+    width: 90vw;
+    height: auto;
+}
+.callbackbutton{
+    background-color: #1565d8;
+    color: aliceblue;
+    border: 0;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.gap{
+    padding: 30px;
+}
+.betweenblockdivs{
+    width: 100%;
+    background-color: #183b56;
+    border-radius: 30px;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+.betweenblockdivsheading{
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.betweenblockdivsminisection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+.betweenblockdivsminiCard{
+    margin: 20px;
+    min-width: 190px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.betweenblockdivsminiCardImage{
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.women{
+    width: fit-content;
+    background-size: cover;
+}
+.betweenblockdivsminiCarddetails{
+    text-align: left;
+    padding: 10px;
+    padding-top: 10px;
+}
+.betweenblockdivsminiCardHead{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+.betweenblockdivsminiCardPara{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.comapnieshiredheading{
+    color: tomato;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+}
+.learnthebestfrom{
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+}

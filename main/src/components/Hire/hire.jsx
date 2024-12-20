@@ -1,8 +1,12 @@
+import Navbar from "/src/components/Navbar/navbar.jsx";
+import Footer from "/src/components/Footer/footer.jsx";
 import React from 'react';
 import './hire.css';
 
 const Hire = () => {
   return (
+    <>
+    <Navbar />
     <div className="hire">
       <h1>Hire Our Experts</h1>
       <p>Looking for skilled professionals? Our students and experts are ready to help your business grow.</p>
@@ -14,6 +18,8 @@ const Hire = () => {
       </ul>
       <p>Contact us today to find the perfect match for your project!</p>
     </div>
+    <Footer />
+    </>
   );
 };
 

@@ -1,8 +1,12 @@
+import Navbar from "/src/components/Navbar/navbar.jsx";
+import Footer from "/src/components/Footer/footer.jsx";
 import React from 'react';
 import './review.css';
 
 const Review = () => {
   return (
+    <>
+    <Navbar />
     <div className="review">
       <h1>What Our Students Say</h1>
       <p>We value the feedback of our students. Here's what they have to say about our courses and instructors:</p>
@@ -19,6 +23,8 @@ const Review = () => {
         <h4>- Mike Johnson</h4>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

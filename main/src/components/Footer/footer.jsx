@@ -17,7 +17,7 @@ const Footer =()=>{
         <div className="inner-section">
           <div className="head-img-section">
             <h1 className="heading-footer">
-              <span className="wavespan">Wave</span>Tech
+              <span className="wavespan">WaveTech</span>
             </h1>
             <img src="./wave.png" alt="Logo" className="foot-image" />
           </div>

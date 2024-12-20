@@ -47,7 +47,7 @@ const Navbar = () => {
       <Link to="/" className="link-text">
         <div className="nav-logo-header">
           <img src="./wave.png" alt="logo" className="nav-title" />
-          <h1 className="nav-logo-heading"><span className="wavespan">Wave</span>Tech</h1>
+          <h1 className="nav-logo-heading"><span className="wavespan">WaveTech</span></h1>
         </div>
       </Link>
       <div className="menu" onClick={toggleMenu}>
