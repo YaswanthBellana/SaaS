@@ -16,6 +16,10 @@ const Home = () => {
               <h1>WAVE TECH</h1>
               <p>Empowering you to learn and grow with our expert-curated resources.</p>
               <p>We teach valuable skills and provide job opportunities to kickstart your career.</p>
+              <div className="homebuttonsregisterexistingandnew">
+                <button href="/register" className="buttonsHomeRegister">New Students<br />Register</button>
+                <button href="https://localhost:5000" className="buttonsHomeRegister">Existing Student<br />Login</button>
+              </div>
             </div>
           </div>
           {/* Single Wave */}

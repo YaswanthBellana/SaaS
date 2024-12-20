@@ -8,6 +8,21 @@ body {
 .main-container {
     text-align: center;
 }
+.homebuttonsregisterexistingandnew{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+.buttonsHomeRegister{
+    width: 140px;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+}
 .header {
     position: relative;
     text-align: center;

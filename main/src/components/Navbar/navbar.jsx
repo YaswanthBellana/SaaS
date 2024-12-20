@@ -66,13 +66,13 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/review" onClick={toggleMenu}>
-            Reviews
+          <NavLink to="/hire" onClick={toggleMenu}>
+            Hire Students
           </NavLink>
         </li>
         <li>
-          <NavLink to="/hire" onClick={toggleMenu}>
-            Hire Students
+          <NavLink to="/register" onClick={toggleMenu}>
+            New Student Register
           </NavLink>
         </li>
         <li>
