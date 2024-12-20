@@ -1,0 +1,320 @@
+:root {
+  --trunk-brown: #A07F65;
+  --sky-blue: #9CE6FC;
+  --ant-color: black;
+  --leaf-color: #8ABD29;
+  --box-brown: #8B4513; /* Brown color for the box */
+}
+
+.registerClass {
+  background: linear-gradient(to bottom, var(--sky-blue), var(--sky-blue) 200px, var(--trunk-brown) 200px, var(--trunk-brown));
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.box-canvas {
+  position: relative;
+  margin: 0;
+  display: block;
+  margin-bottom: 8%;
+  width: 100%;
+  min-width: 300px;
+  height: 200px;
+  background: var(--sky-blue);
+}
+
+.scene-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: antMarch 7s infinite linear;
+}
+
+/* Slow down the animation when the ants have to travel further */
+@media only screen and (min-width: 600px) {
+  .scene-wrapper {
+    animation: antMarch 10s infinite linear;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .scene-wrapper {
+    animation: antMarch 13s infinite linear;
+  }
+}
+
+@keyframes antMarch {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Convenience class to wrap all ant elements */
+.ant-wrapper {
+  position: absolute;
+  bottom: -5px;
+  width: 100px;
+  height: 100px;
+  z-index: 2; /* Ensure ants are above the box */
+}
+
+.ant-wrapper.one {
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.ant-wrapper.two {
+  left: calc(100% - 150px);
+  transform: translateX(-100%);
+}
+
+.ant-wrapper.three {
+  left: calc(100% - 300px);
+  transform: translateX(-100%);
+}
+
+.ant-wrapper.four {
+  left: calc(100% - 450px);
+  transform: translateX(-100%);
+}
+
+.ant-wrapper.five {
+  left: calc(100% - 600px);
+  transform: translateX(-100%);
+}
+
+.ant-wrapper.six {
+  left: calc(100% - 750px);
+  transform: translateX(-100%);
+}
+
+/* Box - The brown rectangle above the ant */
+.box {
+  position: absolute;
+  top: 10px;  /* Position the box above the ant */
+  width: 120px;
+  height: 40px;
+  background-color: var(--box-brown);
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Actual leaf (remove it since it's no longer used) */
+.leaf {
+  display: none;
+}
+
+/* Ant parts (same as before) */
+.body-left, .body-middle, .body-right {
+  background: var(--ant-color);
+}
+
+.body-left {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--ant-color);
+  border-radius: 50%;
+  bottom: 17px;
+  right: 60px;
+}
+
+/* Feeler left */
+.body-left::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  height: 10px;
+  width: 5px;
+  border: 1px solid var(--ant-color);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 40%;
+}
+
+/* Feeler right */
+.body-left::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: -8px;
+  height: 10px;
+  width: 5px;
+  border: 1px solid var(--ant-color);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 40%;
+}
+
+.body-middle {
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  background: var(--ant-color);
+  border-radius: 50%;
+  width: 25px;
+  height: 20px;
+}
+
+/* Middle leg */
+.body-middle::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 10px;
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--ant-color);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: middleLegMove 0.25s infinite;
+}
+
+@keyframes middleLegMove {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0)
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Front leg */
+.body-middle::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: -15px;
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--ant-color);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-radius: 40%;
+  transform: rotate(20deg);
+  animation: frontLegMove 0.25s infinite;
+}
+
+@keyframes frontLegMove {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(20deg) translateY(-5px);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.body-right {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  width: 30px;
+  height: 20px;
+  background: var(--ant-color);
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+
+/* Back leg */
+.body-right::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  height: 20px;
+  width: 25px;
+  border: 2px solid var(--ant-color);
+  border-left: none;
+  border-bottom: none;
+  transform: skew(0deg, -40deg) rotate(25deg);
+  animation: backLegMove 0.25s infinite;
+}
+
+@keyframes backLegMove {
+  0% {
+    transform: skew(0deg, -40deg) rotate(25deg);
+  }
+  50% {
+    transform: skew(0deg, -40deg) rotate(25deg) translateY(-3px);
+  }
+  100% {
+    transform: skew(0deg, -40deg) rotate(25deg);
+  }
+}
+
+.registerPage {
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin-top: 50px;
+  position: relative; /* Add relative positioning to contain the ants */
+}
+
+.infoText {
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.registerForm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1; /* Ensure the form stays above the ants */
+  position: relative;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registerbutton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}

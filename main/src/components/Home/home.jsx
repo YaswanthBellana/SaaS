@@ -1,9 +1,12 @@
 import Navbar from "/src/components/Navbar/navbar.jsx";
 import Footer from "/src/components/Footer/footer.jsx";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -17,8 +20,8 @@ const Home = () => {
               <p>Empowering you to learn and grow with our expert-curated resources.</p>
               <p>We teach valuable skills and provide job opportunities to kickstart your career.</p>
               <div className="homebuttonsregisterexistingandnew">
-                <button href="/register" className="buttonsHomeRegister">New Students<br />Register</button>
-                <button href="https://localhost:5000" className="buttonsHomeRegister">Existing Student<br />Login</button>
+                <button onClick={() => navigate("/register")} className="buttonsHomeRegister">New Students<br />Register</button>
+                <button onClick={() => navigate("/")} className="buttonsHomeRegister">Existing Student<br />Login</button>
               </div>
             </div>
           </div>
@@ -95,7 +98,7 @@ const Home = () => {
         <img className="featuredImage" src="src/assets/hiringcompanies.png" />
       </div>
       <div className="imageInputHome gap">
-        <button className="callbackbutton">Request a Callback</button>
+        <button onClick={() => navigate("/register")} className="callbackbutton">Request a Callback</button>
       </div>
       <Footer />
     </>
