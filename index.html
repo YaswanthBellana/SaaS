@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Profile API</title>
+</head>
+<body>
+  <h1>Test Profile API</h1>
+  <form id="profileForm">
+    <label for="userid">User ID:</label><br>
+    <input type="number" id="userid" name="userid" required><br><br>
+
+    <button type="submit">Get Profile</button>
+  </form>
+
+  <div id="response">
+    <h2>Response:</h2>
+    <pre id="responseData"></pre>
+  </div>
+
+  <script>
+    const form = document.getElementById("profileForm");
+    const responseData = document.getElementById("responseData");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get User ID from input
+      const userid = document.getElementById("userid").value;
+
+      try {
+        // Send GET request to the API
+        const response = await fetch(`http://localhost:4000/profile?userid=${userid}`, {
+          method: "GET",
+        });
+
+        // Display the API response
+        const data = await response.json();
+        responseData.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        responseData.textContent = `Error: ${error.message}`;
+      }
+    });
+  </script>
+</body>
+</html>

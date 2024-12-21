@@ -1,18 +1,24 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home/home.jsx';
-import Courses from './components/Courses/courses.jsx';
-import Review from "./components/Review/review.jsx";
-import Hire from './components/Hire/hire.jsx';
+import Login from './components/Login/login.jsx';
+// import Home from './components/Home/home.jsx';
+// import Courses from './components/Courses/courses.jsx';
+// import Activity from './components/Activity/activity.jsx';
+// import Post from './components/Post/post.jsx';
+// import AITeacher from './components/AITeacher/ai.jsx';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        {/* <Route path="/" exact element={<Home />} />
         <Route path="/courses" exact element={<Courses />} />
-        <Route path="/review" exact element={<Review />} />
-        <Route path="/hire" exact element={<Hire />} />
+        <Route path="/activity" exact element={<Activity />} />
+        <Route path="/post" exact element={<Post />} />
+        <Route path="/profile" exact element={Profile} />
+        <Route path="/ai_teacher" exact element={<AITeacher />} />
+        <Route path="/job_board" exact element={<JobBoard />} /> */}
       </Routes>
     </Router>
   );
