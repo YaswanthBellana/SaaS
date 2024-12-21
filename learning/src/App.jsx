@@ -9,7 +9,7 @@ import JobBoard from './components/JobBoard/jobBoard.jsx';
 import AITeacher from './components/AITeacher/ai.jsx';
 import Activity from './components/Activity/activity.jsx';
 import Community from './components/Community/community.jsx';
-import ProtectedRoute from './components/ProtectedRoute';
+// import ProtectedRoute from './components/ProtectedRoute';
 
 import './App.css';
 
@@ -18,14 +18,14 @@ function App() {
     <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <ProtectedRoute path="/" element={<Home />} />
-        <ProtectedRoute path="/profile" element={<Profile />} />
-        <ProtectedRoute path="/courses" element={<Courses />} />
-        <ProtectedRoute path="/mycourse" element={<MyCourse />} />
-        <ProtectedRoute path="/job_board" element={<JobBoard />} />
-        <ProtectedRoute path="/ai_teacher" element={<AITeacher />} />
-        <ProtectedRoute path="/activity" element={<Activity />} />
-        <ProtectedRoute path="/community" element={<Community />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/mycourse" element={<MyCourse />} />
+        <Route path="/job_board" element={<JobBoard />} />
+        <Route path="/ai_teacher" element={<AITeacher />} />
+        <Route path="/activity" element={<Activity />} />
+        <Route path="/community" element={<Community />} />
       </Routes>
     </Router>
   );
