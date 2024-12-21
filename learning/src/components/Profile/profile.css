@@ -18,3 +18,66 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
+.profilesectionsalign{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profilewebpageoccupationcontainer{
+    font-family: Arial, sans-serif;
+    color: #333;
+    width: 66%;
+    background-color: #f4f4f9;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+}
+.profilepageminicontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.profilepageminicontainer1input{
+    /* flex: 1 1 calc(100% - 20px); */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.profilepageminicontainer2input{
+    /* flex: 1 1 calc(100% - 20px); */
+    padding: 10px 0 10px 10px;
+    /* width: 96%; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.profilepagebuttoncontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.profilepagesavechanges {
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+    width: 160px;
+    height: 50px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.profilepagesavechanges:hover {
+    background-color: #cccccc;
+
+}
