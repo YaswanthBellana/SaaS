@@ -10,7 +10,8 @@ const Community = () => {
                 <Navbar />
             </div>
             <div className='communitywebpageoccupation'>
-                <h1 className='aiwebpagemessage'>You will have your AI Tutor soon.</h1>
+                <h1 className='communityhead'>Community Members</h1>
+                <img src='src/assets/courses/community.png' className='communitypicture' />
             </div>
         </div>
     );

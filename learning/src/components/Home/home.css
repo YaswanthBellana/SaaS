@@ -18,3 +18,72 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
+.dashboardcardcontainer{
+    width: 95%;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.dashboardcards{
+    width: 350px;
+    background-color: rgb(241, 234, 234);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dashboardprofilepicture{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 150px;
+}
+.dashboardstatus{
+    width: 90%;
+    border: 1px solid #010101;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.dashboardratings{
+    font-size: 24px;
+    color: rgb(58, 57, 57);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.dashboardcoursehead{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.dashboardcoursecomplete{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.dashboardprofiledetails{
+    font-size: 20px;
+    padding: 20px 0 10px 20px;
+}
+.dashboardnotification{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: underline;
+}
+.notificationslist{
+    list-style: square;
+}
+.dashboardnotificationitem{
+    font-size: 18px;
+    margin: 5px 2px 3px 2px;
+}

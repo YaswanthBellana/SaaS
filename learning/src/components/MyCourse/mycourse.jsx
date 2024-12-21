@@ -5,7 +5,7 @@ import './mycourse.css';
 
 const MyCourse = () => {
     const jwtToken = Cookies.get('jwt');
-    let cookieString = '000000';
+    let cookieString = '100000';
     if (jwtToken) {
         cookieString = jwtToken;
     }
@@ -70,9 +70,9 @@ const MyCourse = () => {
                                     <img src={course.image} alt={course.name} className="courseCardImage" />
                                     <h4 className="courseContentHead">{course.name}</h4>
                                     <div className="courseCardContent">
-                                        <p className="courseContentPara"><b>Price:</b> {course.price}</p>
                                         <p className="courseContentPara"><b>Skills:</b> {course.skills}</p>
                                     </div>
+                                    <div className='mycoursebuttoncontainer'><button className='mycoursebutton'>Continue learning</button></div>
                                 </div>
                             );
                         }

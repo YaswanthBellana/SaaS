@@ -15,8 +15,8 @@
 
 .navbarcompanyhead {
     margin-left: 10px;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

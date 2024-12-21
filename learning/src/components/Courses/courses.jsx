@@ -19,6 +19,7 @@ const Courses = () => {
                             <p className="courseContentPara"><b>Price:</b> ₹9,999</p>              
                             <p className="courseContentPara"><b>Skills:</b> Basics Python, Python modules, AI intoduction, ML models</p>
                         </div>
+                        <div className='coursebuttoncontainer'><button className='coursebutton'>Buy Course</button></div>
                     </div>
                     <div className="courseCard">
                         <img src="src/assets/courses/cyber.png" className="courseCardImage" />
@@ -27,6 +28,7 @@ const Courses = () => {
                             <p className="courseContentPara"><b>Price:</b> ₹15,999</p>              
                             <p className="courseContentPara"><b>Skills:</b> Computer Basics, OS, Cyber Security Types, Cyber Tools</p>
                         </div>
+                        <div className='coursebuttoncontainer'><button className='coursebutton'>Buy Course</button></div>
                     </div>
                     <div className="courseCard">
                         <img src="src/assets/courses/javafullstack.png" className="courseCardImage" />
@@ -35,6 +37,7 @@ const Courses = () => {
                             <p className="courseContentPara"><b>Price:</b> ₹9,999</p>              
                             <p className="courseContentPara"><b>Skills:</b> Java, Html, CSS, JavaScript, SQL</p>
                         </div>
+                        <div className='coursebuttoncontainer'><button className='coursebutton'>Buy Course</button></div>
                     </div>
                     <div className="courseCard">
                         <img src="src/assets/courses/webdevelopment.png" className="courseCardImage" />
@@ -43,6 +46,7 @@ const Courses = () => {
                             <p className="courseContentPara"><b>Price:</b> ₹8,999</p>              
                             <p className="courseContentPara"><b>Skills:</b> Html, CSS, JavaScript, React.Js, Node.Js, SQL, MongoDB</p>
                         </div>
+                        <div className='coursebuttoncontainer'><button className='coursebutton'>Buy Course</button></div>
                     </div>
                     <div className="courseCard">
                         <img src="src/assets/courses/datascience.png" className="courseCardImage" />
@@ -51,6 +55,7 @@ const Courses = () => {
                             <p className="courseContentPara"><b>Price:</b> ₹19,999</p>              
                             <p className="courseContentPara"><b>Skills:</b> Python, PowerBI, Algorithms</p>
                         </div>
+                        <div className='coursebuttoncontainer'><button className='coursebutton'>Buy Course</button></div>
                     </div>
                     <div className="courseCard">
                         <img src="src/assets/courses/business.png" className="courseCardImage" />
@@ -59,6 +64,7 @@ const Courses = () => {
                             <p className="courseContentPara"><b>Price:</b> ₹5,999</p>              
                             <p className="courseContentPara"><b>Skills:</b> Market Analysis, Market MindSet, Vision</p>
                         </div>
+                        <div className='coursebuttoncontainer'><button className='coursebutton'>Buy Course</button></div>
                     </div>
                 </div>
             </div>
