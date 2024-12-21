@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import Cookies from "js-cookie";
 import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState(""); // State for error messages
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,6 +23,7 @@ const Login = () => {
 
       const data = await response.json();
       if (response.ok) {
+        Cookies.set("jwtToken", data.token, { expires: 2 }); // Token stored for 2 days
         console.log("Login Successful", data);
       } else {
         setError(data.error || "Login failed");

@@ -1,24 +1,31 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Login from './components/Login/login.jsx';
-// import Home from './components/Home/home.jsx';
-// import Courses from './components/Courses/courses.jsx';
-// import Activity from './components/Activity/activity.jsx';
-// import Post from './components/Post/post.jsx';
-// import AITeacher from './components/AITeacher/ai.jsx';
+import Home from './components/Home/home.jsx';
+import Profile from './components/Profile/profile.jsx';
+import Courses from './components/Courses/courses.jsx';
+import MyCourse from './components/MyCourse/mycourse.jsx';
+import JobBoard from './components/JobBoard/jobBoard.jsx';
+import AITeacher from './components/AITeacher/ai.jsx';
+import Activity from './components/Activity/activity.jsx';
+import Community from './components/Community/community.jsx';
+import ProtectedRoute from './components/ProtectedRoute';
+
+import './App.css';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
-        {/* <Route path="/" exact element={<Home />} />
-        <Route path="/courses" exact element={<Courses />} />
-        <Route path="/activity" exact element={<Activity />} />
-        <Route path="/post" exact element={<Post />} />
-        <Route path="/profile" exact element={Profile} />
-        <Route path="/ai_teacher" exact element={<AITeacher />} />
-        <Route path="/job_board" exact element={<JobBoard />} /> */}
+        <ProtectedRoute path="/" element={<Home />} />
+        <ProtectedRoute path="/profile" element={<Profile />} />
+        <ProtectedRoute path="/courses" element={<Courses />} />
+        <ProtectedRoute path="/mycourse" element={<MyCourse />} />
+        <ProtectedRoute path="/job_board" element={<JobBoard />} />
+        <ProtectedRoute path="/ai_teacher" element={<AITeacher />} />
+        <ProtectedRoute path="/activity" element={<Activity />} />
+        <ProtectedRoute path="/community" element={<Community />} />
       </Routes>
     </Router>
   );
