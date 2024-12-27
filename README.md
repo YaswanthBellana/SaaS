@@ -21,7 +21,13 @@ This repository contains the code for a modular e-learning platform with three m
 
 ### Demo Videos
 - **Parent Website Output**: [Watch Video](./main.mp4)
+<div style="text-align: center;">
+    <img src="./main.gif" style="max-width:90%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
 - **Learner Portal Output**: [Watch Video](./learning.mp4)
+<div style="text-align: center;">
+    <img src="./learning.gif" style="max-width:90%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
+</div>
 
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript, React.
